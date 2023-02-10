@@ -1,9 +1,24 @@
 const Item = require('../../models/item');
 
 module.exports = {
-    create,
-    getAll,
     getOwned,
+    getAll,
+    create
+}
+
+
+async function getOwned(req, res) {
+    const items = await Item.find({
+        user: req.user._id
+    })
+    res.json(items);
+}
+
+async function getAll(req, res) {
+    const items = await Item.find({
+        user: req.user._id
+    })
+    res.json(items);
 }
 
 async function create(req, res) {
