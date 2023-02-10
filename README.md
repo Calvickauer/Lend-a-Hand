@@ -27,6 +27,7 @@ Please read CONTRIBUTING.md for details on our code of conduct, and the process 
 We use SemVer for versioning. For the versions available, see the tags on this repository.
 # Authors
 Calvin Moldenhauer - Full Stack Engineer - https://github.com/Calvickauer
+Alexander Cairel - Full Stack Engineer - https://github.com/ajcairel
 See also the list of contributors who participated in this project.
 # License
 This project is licensed under the MIT License - see the LICENSE.md file for details.
