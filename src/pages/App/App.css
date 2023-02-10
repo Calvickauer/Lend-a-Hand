@@ -198,6 +198,7 @@ img{
   width: 600px;
   margin-left: auto;
   margin-right: auto;
+  overflow-y: scroll;
 }
 /* React Calendar Styling */
 .calendar {
