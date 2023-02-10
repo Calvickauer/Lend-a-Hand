@@ -6,7 +6,7 @@ export default function AddItemPage() {
 
   
 
-    const [newItem, setItem] = useState({ title: "",});
+    const [newItem, setItem] = useState({ title: ""});
 
     async function handleAddItem(evt) {
       console.log(typeof(newItem));
@@ -26,6 +26,7 @@ export default function AddItemPage() {
             onChange={(e) => setItem(e.target.value)}
             required
           />
+       
           <button type="submit">Add Item</button>
         </form>
       </>

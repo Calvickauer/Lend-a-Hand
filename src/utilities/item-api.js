@@ -5,6 +5,9 @@ const BASE_URL = "/api/items";
 export function getAll() {
     return sendRequest(`${BASE_URL}`);
 }
+export function getOwned() {
+    return sendRequest(`${BASE_URL}`);
+}
 
 export function create(title) {
     console.log("ITEM: ", title);

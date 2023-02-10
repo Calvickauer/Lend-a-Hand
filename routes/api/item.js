@@ -7,6 +7,7 @@ const ensureLoggedIn = require ('../../config/ensureLoggedIn');
 
 
 router.get("/", itemCtrl.getAll);
+router.get("/owned", itemCtrl.getOwned);
 router.post("/add", itemCtrl.create);
 router.get("/about", itemCtrl.getAll);
 
