@@ -1,5 +1,5 @@
 import { useState, useEffect } from "react"
-import MyCalendar from '../components/Calendar/Calendar'
+
 import * as itemsAPI from '../utilities/item-api'
 
 export default function ItemsPage() {
@@ -19,7 +19,7 @@ export default function ItemsPage() {
             {item.map((item, idx) => 
             <div>{item.title} </div>
             )}
-            <MyCalendar />
+            
         </>
 
     )
