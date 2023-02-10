@@ -1,6 +1,6 @@
 import { useState } from "react";
 import * as itemAPI from '../utilities/item-api';
-import { uploadFile } from 'react-s3';
+
 
 export default function AddItemPage() {
 
