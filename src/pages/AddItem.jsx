@@ -18,8 +18,9 @@ export default function AddItemPage() {
     }
   
     return (
-      <div className="new__items">
+      <div>
         <h2>Add new item</h2>
+        <div className="new__items">
         <form onSubmit={handleAddItem}>
           <input
             value={newItem.title}
@@ -29,6 +30,7 @@ export default function AddItemPage() {
        
           <button type="submit">Add Item</button>
         </form>
+        </div>
       </div>
     );
   
