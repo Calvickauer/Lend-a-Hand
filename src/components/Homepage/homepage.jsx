@@ -1,6 +1,7 @@
 import React from "react";
 import { useState, useEffect } from "react";
 import * as itemsAPI from "../../utilities/item-api";
+import { Link } from "react-router-dom";
 
 const Homepage = () => {
   const [items, setItems] = useState([]);
@@ -25,7 +26,7 @@ const Homepage = () => {
   };
 
   return (
-
+<>
     <div>
       <h3 className="homepage__title">Lend A Hand!</h3>
       <div className="form__container">
@@ -42,13 +43,22 @@ const Homepage = () => {
       </div>
       <div>
         {filteredResults.map((eye, idx) => (
-          <div>{eye.title}</div>
+          <div>
+          <table>
+            <th>{eye.title}</th>
+            <tr><img src={`${eye.image}`} alt="" style={{ width: "25rem", height: "25rem"}}/> </tr>
+          </table>
+            <button as={Link} to={`/items/${eye._id}`}>Info</button> 
+
+
+          </div>
         ))}
         
         
       </div>
 
     </div>
+    </>
   );
 };
 

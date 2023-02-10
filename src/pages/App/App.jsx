@@ -7,7 +7,9 @@ import Homepage from '../../components/Homepage/homepage';
 import AddItemPage from '../AddItem';
 import ItemsPage from '../ItemsPage';
 import About from '../../components/About/about';
+import Product from '../../pages/Product/Product'
 import Profile from '../../pages/Profile/Profile';
+import Details from '../Details';
 import './App.css';
 
 function App() {
@@ -24,7 +26,9 @@ function App() {
             <Route path='/add' element={<AddItemPage />} />
             <Route path='/items' element={<ItemsPage />} />
             <Route path='/about' element={<About />} />
+            <Route path= 'search/product' element={<Product />} />
             <Route path='/user' element={<Profile user={user}/>} />
+            <Route path='/items/:itemId' element={<Details user={user}/>} />
           </Routes>
         </>
         :

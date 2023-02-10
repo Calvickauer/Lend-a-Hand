@@ -1,3 +1,4 @@
+const db = require('../models/item')
 const initial_items = [
     {
         title: "Hacksaw",
@@ -26,3 +27,13 @@ const initial_items = [
     },
     
 ]
+
+db.Item.deleteMany({}, () => {
+    db.Item.create(initial_items, (err, items) => {
+        if (err) {
+            console.log("Error on create items:", err)
+        } else {
+            console.log("Created", items.length, "items")
+        }
+    })
+})

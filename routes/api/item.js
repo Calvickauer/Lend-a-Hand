@@ -9,6 +9,7 @@ const ensureLoggedIn = require ('../../config/ensureLoggedIn');
 router.get("/", itemCtrl.getAll);
 router.get("/owned", itemCtrl.getOwned);
 router.post("/add", itemCtrl.create);
+router.post("/items/:itemId", itemCtrl.getItem);
 router.get("/about", itemCtrl.getAll);
 
 module.exports = router;

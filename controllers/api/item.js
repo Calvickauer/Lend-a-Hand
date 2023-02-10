@@ -3,7 +3,7 @@ const Item = require('../../models/item');
 module.exports = {
     create,
     getAll,
-    getOwned,
+    getOwned, getItem
 }
 
 async function create(req, res) {
@@ -25,6 +25,12 @@ async function getAll(req, res) {
         // user: req.user._id
     })
     res.json(items);
+}
+async function getItem(req, res) {
+    const item = await Item.find({
+        id: req.item._id
+    })
+    res.json(item);
 }
 
 
