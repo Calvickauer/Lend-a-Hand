@@ -1,3 +1,4 @@
+ ajcairel
 import { useState } from "react";
 import * as itemAPI from '../utilities/item-api';
 import { uploadFile } from 'react-s3';
@@ -14,10 +15,12 @@ export default function AddItemPage() {
       const item = await itemAPI.create(newItem)
       console.log(item);
       
+ 
     }
   
     return (
       <>
+ajcairel
         <h2>New To-Do</h2>
         <form onSubmit={handleAddItem}>
           <input
@@ -25,15 +28,9 @@ export default function AddItemPage() {
             onChange={(e) => setItem(e.target.value)}
             required
           />
-          <button type="submit">ADD TO-DO</button>
+          <button type="submit">Add Item</button>
         </form>
       </>
     );
-
-
-
-    
-
-  
   
 }

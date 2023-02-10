@@ -5,6 +5,7 @@ module.exports = {
     create
 }
 
+ajcairel
 
 async function getAll(req, res) {
     const items = await Item.find({
@@ -18,4 +19,6 @@ async function create(req, res) {
     req.body.user = req.user._id;
     const item = Item.create(req.body);
     res.json(item);
+
+ main
 }
