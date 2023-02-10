@@ -14,7 +14,7 @@
 }
 
 .App-header {
-  background-color: #282c34;
+  background-color: #ffffff;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
@@ -35,4 +35,135 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+.homepage__title{
+  margin-top: 60px;
+  font-size: 40px;
+}
+
+.form__container {
+  align-items: center;
+  background-color: rgb(232, 38, 38);
+  border: 2px solid rgb(3, 1, 1);
+  border-radius: 20px;
+  color: white;
+  padding: 5px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 80px;
+  width: 700px;
+  min-height: fit-content;
+}
+
+.form__container:hover{
+  background: rgb(255,0,0);
+  background: linear-gradient(90deg, rgba(255,0,0,1) 0%, rgba(255,0,0,1) 20%, rgba(0,0,0,1) 45%, rgba(0,0,0,1) 55%, rgba(255,0,0,1) 80%, rgba(255,0,0,1) 100%);
+  font-weight: bolder;
+  text-decoration: underline;
+}
+
+.form{
+ 
+}
+
+.item__input{
+  margin-left: 20px;
+  margin-top: 7px;
+  min-height: 30px;
+  max-width: 400px;
+  max-height: 40px;
+}
+
+.search__label{
+  width: 200px;
+  margin-left: 30px;
+  margin-top: 5px;
+  color: white;
+}
+
+.navBar {
+  background-color: rgb(154, 154, 154);
+  border-radius: 30px;
+  margin-top: 10px;
+  height: 60px;
+  color: white;
+  width: 1000px;
+  margin-left: auto;
+  margin-right: auto;
+  border: 3px solid rgb(0, 0, 0);
+}
+
+.nav__links{
+  padding-top: 20px;
+}
+
+.link{
+  background-color: white;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 10px;
+  padding-right: 10px;
+  border-radius: 20px;
+  margin-left: 10px;
+  margin-right: 10px;
+  text-decoration: none;
+  color: black;
+}
+
+.link:hover{
+  background-color: rgb(255, 0, 0);
+  color: rgb(255, 255, 255);
+  border: 1px solid white;
+  font-weight: bolder;
+}
+
+.welcome__nav{
+  padding-right: 40px;
+  font-weight: bolder;
+}
+
+.about{
+  margin-top: 80px;
+  padding: 20px;
+  width: 500px;
+  border-radius: 10px;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: rgb(166, 166, 166, 0.4);
+  color: rgb(127, 0, 0);
+  border: 5px solid black;
+}
+.about__title{
+  color: black;
+}
+
+.profile__page{
+  margin-top: 60px;
+}
+
+.profile__container{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  margin-top: 40px;
+  border: 2px solid black;
+  width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+  height: 400px;
+}
+
+.profile__pic{
+  width: 300px;
+  height: 300px;
+  margin-left: 20px;
+  margin-top: 20px;
+  border-radius: 100%;
+  background-color: gray;
+  border: 1px solid black;
+}
+
+.profile__content{
+  margin-right: 250px;
+  margin-top: 50px;
 }

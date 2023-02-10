@@ -23,6 +23,7 @@ app.use(require('./config/checkToken'));
 
 // Put all API routes here (before the catch-all)
 app.use('/api/users', require('./routes/api/users'));
+app.use('/api/item', require('./routes/api/item'));
 
 // "catch-all" route that will match all GET requests
 // that don't match an API route defined above
@@ -30,8 +31,8 @@ app.get('/*', function(req, res) {
   res.sendFile(path.join(__dirname, 'build', 'index.html'));
 });
 
-const port = process.env.PORT || 3000;
+const port = process.env.PORT || 3001;
 
 app.listen(port, function() {
-  console.log(`Express app running on port ${port}`);
+  console.log(`You're listening to the smooth sounds of port ${port}`);
 });

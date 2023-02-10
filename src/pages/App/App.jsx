@@ -1,8 +1,13 @@
-import { useState } from 'react';
+import React, { useState } from 'react';
 import { Routes, Route } from 'react-router-dom';
 import { getUser } from '../../utilities/users-service';
 import AuthPage from '../AuthPage/AuthPage';
 import NavBar from '../../components/NavBar/NavBar';
+import Homepage from '../../components/Homepage/homepage';
+import AddItemPage from '../AddItem';
+import ItemsPage from '../ItemsPage';
+import About from '../../components/About/about';
+import Profile from '../../pages/Profile/Profile';
 import './App.css';
 
 function App() {
@@ -16,6 +21,10 @@ function App() {
           <Routes>
             {/* Route components in here */}
             <Route path='/' element={<Homepage />} />
+            <Route path='/add' element={<AddItemPage />} />
+            <Route path='/items' element={<ItemsPage />} />
+            <Route path='/about' element={<About />} />
+            <Route path='/user' element={<Profile />} />
           </Routes>
         </>
         :
