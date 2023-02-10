@@ -7,7 +7,8 @@ const itemSchema = new Schema({
         ref: 'User',
         required: true
     },
-    title: { type: String },
+    title: { type: String, required: true },
+
 });
 
 module.exports = mongoose.model('Item', itemSchema);
