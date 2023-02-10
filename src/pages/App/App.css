@@ -46,16 +46,22 @@
 }
 
 .homepage__title{
-  margin-top: 60px;
   font-size: 40px;
+  margin-top: 0px;
+  padding-top: 100px;
+}
+
+.home__container{
+  height: fit-content;
+  margin-top: 0px;
 }
 
 .form__container {
   align-items: center;
-  background-color: rgb(232, 38, 38);
+  background-color: rgb(255, 255, 255);
   border: 2px solid rgb(3, 1, 1);
   border-radius: 20px;
-  color: white;
+  color: rgb(0, 0, 0);
   padding: 5px;
   margin-left: auto;
   margin-right: auto;
@@ -65,9 +71,8 @@
 }
 
 .form__container:hover{
-  background: rgb(255,0,0);
+  background: rgb(255, 255, 255);
   font-weight: bolder;
-  text-decoration: underline;
 }
 
 .form{
@@ -86,11 +91,16 @@
   width: 200px;
   margin-left: 30px;
   margin-top: 5px;
-  color: white;
+  color: rgb(0, 0, 0);
+}
+
+.search__label:hover{
+  text-decoration: underline;
 }
 
 .navBar {
   background-color: lightgray;
+  position: fixed;
   margin: 0px;
   height: 60px;
   color: var(--black);
@@ -342,4 +352,20 @@ img{
   margin-left: auto;
   margin-right: auto;
   margin-top: 50px;
+}
+
+.your__items{
+  height: 200px;
+  width: 200px;
+  overflow-y: scroll;
+  border: 2px solid black;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 10px;
+}
+
+.all__items{
+  display: grid;
+  grid-template-columns: .5fr .5fr;
+  margin-top: 25px;
 }
