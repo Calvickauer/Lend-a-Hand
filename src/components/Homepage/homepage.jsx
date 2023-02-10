@@ -28,7 +28,7 @@ const Homepage = () => {
   return (
 <>
     <div>
-      <h3 className="homepage__title">Lend A Hand!</h3>
+      <h3 className="homepage__title">Lending Hand!</h3>
       <div className="form__container">
         <form className="form">
           <label className="search__label">Search for items to borrow!</label>

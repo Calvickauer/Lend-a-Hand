@@ -1,3 +1,11 @@
+:root {
+  --white: #FFFFFF;
+  --black: #000000;
+  --main: #FD5C63;
+  --header: #1D4E89;
+  --header2: #1D7689;
+}
+
 .App {
   text-align: center;
 }
@@ -83,43 +91,36 @@
 }
 
 .navBar {
-  background-color: rgb(154, 154, 154);
-  border-radius: 30px;
-  margin-top: 10px;
+  background-color: lightgray;
+  margin: 0px;
   height: 60px;
-  color: white;
-  width: 1000px;
-  margin-left: auto;
-  margin-right: auto;
-  border: 3px solid rgb(0, 0, 0);
+  color: var(--black);
+  width: 100%;
+  border-bottom: 1px solid var(--black);
+  /* align-items: baseline; */
 }
 
 .nav__links{
-  padding-top: 20px;
+  padding: 20px;
+  text-align: left;
 }
 
 .link{
-  background-color: white;
-  padding-top: 10px;
-  padding-bottom: 10px;
-  padding-left: 10px;
-  padding-right: 10px;
-  border-radius: 20px;
-  margin-left: 10px;
-  margin-right: 10px;
+  padding: 5px;
+  /* margin-left: 10px;
+  margin-right: 10px; */
   text-decoration: none;
   color: black;
+  font-weight: 500;
 }
 
 .link:hover{
-  background-color: rgb(255, 0, 0);
-  color: rgb(255, 255, 255);
-  border: 1px solid white;
+  color: var(--header2);
   font-weight: bolder;
 }
 
 .welcome__nav{
-  padding-right: 40px;
+  padding: 0px 20px;
   font-weight: bolder;
 }
 
@@ -168,14 +169,46 @@
   margin-top: 50px;
 }
 
-
+.photos {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  flex-wrap:nowrap;
+  width: 600px;
+  height:fit-content;
+  margin-left: auto;
+  margin-right: auto;
+}
+img{
+  
+  width: 50%;
+  height: auto;
+  padding:8px;
+  border:#a0a096;
+  border-style: ridge;
+}
+.description {
+  display: flex;
+  flex-direction: column;
+  border:#a0a096;
+  border-style: ridge;
+  padding: 20px;
+  margin: 20px;
+  width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+  overflow-y: scroll;
+}
 /* React Calendar Styling */
 .calendar {
+  display: flex;
   align-items:center;
   justify-content: center;
+  margin-bottom: 50px;
+  padding-bottom: 50px;
 }
 .react-calendar {
-  
   width: 350px;
   max-width: 100%;
   background: white;
