@@ -43,7 +43,7 @@ const Homepage = () => {
       </div>
       <div>
         {filteredResults.map((eye, idx) => (
-          <div>
+          <div className="item__photo">
           <table>
             <th>{eye.title}</th>
             <tr><img src={`${eye.image}`} alt="" style={{ width: "25rem", height: "25rem"}}/> </tr>

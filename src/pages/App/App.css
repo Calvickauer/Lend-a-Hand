@@ -328,3 +328,12 @@ img{
 .react-calendar--selectRange .react-calendar__tile--hover {
   background-color: #e6e6e6;
 }
+
+.item__photo{
+  margin-top: 30px;
+  margin-left: auto;
+  margin-right: auto;
+  width: fit-content;
+  padding: 10px;
+  /* background-color: rgb(195, 195, 195); */
+}
