@@ -1,20 +1,20 @@
 const Item = require('../../models/item');
 
 module.exports = {
-    getAll,
     getOwned,
+    getAll,
     create
 }
 
 
-async function getAll(req, res) {
+async function getOwned(req, res) {
     const items = await Item.find({
-        // user: req.user._id
+        user: req.user._id
     })
     res.json(items);
 }
 
-async function getOwned(req, res) {
+async function getAll(req, res) {
     const items = await Item.find({
         user: req.user._id
     })
