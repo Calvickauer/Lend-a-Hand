@@ -13,6 +13,7 @@ export function getAll() {
     return sendRequest(`${BASE_URL}`);
 }
 
+// added 
 export function getOwned() {
     return sendRequest(`${BASE_URL}/owned`);
 }
