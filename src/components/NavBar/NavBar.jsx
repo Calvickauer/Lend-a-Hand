@@ -23,6 +23,8 @@ export default function NavBar({ user, setUser }) {
       &nbsp; | &nbsp;
       <Link className='link' to="/user">Profile</Link>
       &nbsp; | &nbsp;
+      <Link className='link' to="/about">About</Link>
+      &nbsp; | &nbsp;
       <Link className='link' to="" onClick={handleLogOut}>Log Out</Link>
       </div>
     </nav>

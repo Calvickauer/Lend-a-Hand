@@ -6,6 +6,7 @@ import NavBar from '../../components/NavBar/NavBar';
 import Homepage from '../../components/Homepage/homepage';
 import AddItemPage from '../AddItem';
 import ItemsPage from '../ItemsPage';
+import About from '../../components/About/about';
 import './App.css';
 
 function App() {
@@ -21,6 +22,7 @@ function App() {
             <Route path='/' element={<Homepage />} />
             <Route path='/add' element={<AddItemPage />} />
             <Route path='/items' element={<ItemsPage />} />
+            <Route path='/about' element={<About />} />
           </Routes>
         </>
         :

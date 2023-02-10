@@ -8,5 +8,6 @@ const ensureLoggedIn = require ('../../config/ensureLoggedIn');
 
 router.get("/", itemCtrl.getAll);
 router.post("/add", itemCtrl.create);
+router.get("/about", itemCtrl.getAll);
 
 module.exports = router;

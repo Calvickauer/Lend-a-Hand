@@ -102,8 +102,8 @@
   background-color: white;
   padding-top: 10px;
   padding-bottom: 10px;
-  padding-left: 30px;
-  padding-right: 30px;
+  padding-left: 10px;
+  padding-right: 10px;
   border-radius: 20px;
   margin-left: 10px;
   margin-right: 10px;
@@ -117,6 +117,18 @@
 }
 
 .welcome__nav{
-  padding-right: 20px;
+  padding-right: 40px;
   font-weight: bolder;
+}
+
+.about{
+  margin-top: 80px;
+  padding: 20px;
+  width: 500px;
+  border-radius: 10px;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: rgb(166, 166, 166, 0.4);
+  color: rgb(127, 0, 0);
+  border: 5px solid black;
 }
