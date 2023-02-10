@@ -337,3 +337,10 @@ img{
   padding: 10px;
   /* background-color: rgb(195, 195, 195); */
 }
+
+.new__items{
+  width: fit-content;
+  margin-left: auto;
+  margin-right: auto;
+  
+}
