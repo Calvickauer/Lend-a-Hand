@@ -1,10 +1,10 @@
-import React from 'react'
+import React from 'react';
 
 const profile = () => {
   return (
-    <div>
+    <div className='profile__container'>
       <h1>profile</h1>
-      <h3>profile</h3>
+      <h3>name</h3>
     </div>
   )
 }
