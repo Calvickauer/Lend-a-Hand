@@ -9,7 +9,6 @@ const homepage = () => {
           <input className='item__input' type='text' id='item-input' placeholder='Search for items to borrow...'/>
           <button className='search__btn' type="submit" placeholder='Search'/>
         </form>
-
       </div>
     </div>
   )
