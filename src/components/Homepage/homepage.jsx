@@ -27,10 +27,10 @@ const Homepage = () => {
   return (
 
     <div>
-      <h3>Homepage</h3>
+      <h3 className="homepage__title">Lend A Hand!</h3>
       <div className="form__container">
-        <form>
-          <label className="search__label">Search for tools!</label>
+        <form className="form">
+          <label className="search__label">Search for items to borrow!</label>
           <input
             className="item__input"
             type="text"
