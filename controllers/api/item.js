@@ -1,26 +1,10 @@
 const Item = require('../../models/item');
 
 module.exports = {
+    create,
     getAll,
     getOwned,
-    create
 }
-
-
-async function getAll(req, res) {
-    const items = await Item.find({
-        // user: req.user._id
-    })
-    res.json(items);
-}
-
-async function getOwned(req, res) {
-    const items = await Item.find({
-        user: req.user._id
-    })
-    res.json(items);
-}
-
 
 async function create(req, res) {
     console.log(req.body);
@@ -28,4 +12,21 @@ async function create(req, res) {
     const item = Item.create(req.body);
     res.json(item);
 }
+
+async function getOwned(req, res) {
+    const items = await Item.find({
+        user: req.user._id
+
+    })
+    res.json(items);
+}
+async function getAll(req, res) {
+    const items = await Item.find({
+        // user: req.user._id
+    })
+    res.json(items);
+}
+
+
+
 
