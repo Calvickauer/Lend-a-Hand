@@ -175,6 +175,10 @@
   justify-content: center;
   gap: 10px;
   flex-wrap:nowrap;
+  width: 600px;
+  height:fit-content;
+  margin-left: auto;
+  margin-right: auto;
 }
 img{
   
@@ -191,13 +195,17 @@ img{
   border-style: ridge;
   padding: 20px;
   margin: 20px;
-
+  width: 600px;
+  margin-left: auto;
+  margin-right: auto;
 }
 /* React Calendar Styling */
 .calendar {
   display: flex;
   align-items:center;
   justify-content: center;
+  margin-bottom: 50px;
+  padding-bottom: 50px;
 }
 .react-calendar {
   width: 350px;
