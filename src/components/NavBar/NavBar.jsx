@@ -12,17 +12,19 @@ export default function NavBar({ user, setUser }) {
 
   return (
     <nav className="navBar">
-      <Link to="/search">Search</Link>
+      <div className='nav__links'>
+      <span className='welcome__nav' >Welcome, {user.name}</span>   
       &nbsp; | &nbsp;
-      <Link to="/search/product">Product</Link>
+      <Link className='link' to="/">Search</Link>
       &nbsp; | &nbsp;
-      <Link to="/add">Add</Link>
+      <Link className='link' to="/add">Add</Link>
       &nbsp; | &nbsp;
-      <span>Welcome, {user.name}</span>
+      <Link className='link' to="/search/product">Product</Link>
       &nbsp; | &nbsp;
-      <Link to="/user">Profile</Link>
+      <Link className='link' to="/user">Profile</Link>
       &nbsp; | &nbsp;
-      <Link to="" onClick={handleLogOut}>Log Out</Link>
+      <Link className='link' to="" onClick={handleLogOut}>Log Out</Link>
+      </div>
     </nav>
     
   );
