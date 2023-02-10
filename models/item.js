@@ -7,9 +7,14 @@ const itemSchema = new Schema({
         ref: 'User',
         required: true
     },
+ajcairel
+ 
+
+
     title: { type: String },
     description: { type: String },
     image: { type: String, default: "https://wellesleysocietyofartists.org/wp-content/uploads/2015/11/image-not-found.jpg" }
+main
 });
 
 module.exports = mongoose.model('Item', itemSchema);

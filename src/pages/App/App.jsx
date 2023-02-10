@@ -24,7 +24,7 @@ function App() {
             <Route path='/add' element={<AddItemPage />} />
             <Route path='/items' element={<ItemsPage />} />
             <Route path='/about' element={<About />} />
-            <Route path='/user' element={<Profile />} />
+            <Route path='/user' element={<Profile user={user}/>} />
           </Routes>
         </>
         :
