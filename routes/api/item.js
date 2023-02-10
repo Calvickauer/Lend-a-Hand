@@ -4,6 +4,9 @@ const itemCtrl = require('../../controllers/api/item');
 // require the authorization middleware function
 const ensureLoggedIn = require ('../../config/ensureLoggedIn');
 
-router.post("/add", ensureLoggedIn, itemCtrl.addItem);
+
+
+router.get("/", itemCtrl.getAll);
+router.post("/add", itemCtrl.create);
 
 module.exports = router;

@@ -1,12 +1,24 @@
 const Item = require('../../models/item');
 
 module.exports = {
-    addItem
+    getAll,
+    create
 }
 
-async function addItem(req, res) {
+ajcairel
+
+async function getAll(req, res) {
+    const items = await Item.find({
+        user: req.user._id
+    })
+    res.json(items);
+}
+
+async function create(req, res) {
+    console.log(req.body);
     req.body.user = req.user._id;
-    const newItem = new Item(req.body);
-    // await newItem.save();
-    res.json(newItem);
+    const item = Item.create(req.body);
+    res.json(item);
+
+ main
 }

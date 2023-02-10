@@ -1,22 +1,31 @@
-import * as itemAPI from "../utilities/item-api"
-import React, { useState } from "react";
+ ajcairel
+import { useState } from "react";
+import * as itemAPI from '../utilities/item-api';
+import { uploadFile } from 'react-s3';
 
-export default function AddItemPage({user}) {
-    const [newItem, setNewItem] = useState({ text: ""});
+export default function AddItemPage() {
+
+  
+
+    const [newItem, setItem] = useState({ title: "",});
 
     async function handleAddItem(evt) {
+      console.log(typeof(newItem));
       evt.preventDefault();
-      await itemAPI.addItem(newItem);
-      setNewItem({ text: ""});
+      const item = await itemAPI.create(newItem)
+      console.log(item);
+      
+ 
     }
   
     return (
       <>
-        s<h2>New Item</h2>
+ajcairel
+        <h2>New To-Do</h2>
         <form onSubmit={handleAddItem}>
           <input
-            value={newItem.text}
-            onChange={(e) => setNewItem(e.target.value)}
+            value={newItem.title}
+            onChange={(e) => setItem(e.target.value)}
             required
           />
           <button type="submit">Add Item</button>
