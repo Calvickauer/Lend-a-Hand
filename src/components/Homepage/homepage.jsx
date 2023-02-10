@@ -25,6 +25,7 @@ const Homepage = () => {
   };
 
   return (
+
     <div>
       <h1>HomePage</h1>
 ajcairel
@@ -45,9 +46,10 @@ ajcairel
         {filteredResults.map((eye, idx) => (
           <div>{eye.title}</div>
         ))}
-
-main
+        
+        
       </div>
+
     </div>
   );
 };
