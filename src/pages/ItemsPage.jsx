@@ -17,7 +17,7 @@ export default function ItemsPage() {
         <>
             <h1>Items</h1>
             {item.map((item, idx) => 
-            <div>{item.title} </div>
+            <div>{item.title} {item.image}</div>
             )}
             
         </>

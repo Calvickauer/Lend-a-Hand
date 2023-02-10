@@ -17,3 +17,7 @@ export function getAll() {
 export function getOwned() {
     return sendRequest(`${BASE_URL}/owned`);
 }
+export function getItem(params) {
+    return sendRequest(`${BASE_URL}/items/:itemId`, "POST", {params});
+
+}

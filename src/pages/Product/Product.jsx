@@ -3,7 +3,7 @@ import MyCalendar from '../../components/Calendar/Calendar'
 export default function Product() {
     return (
         <>
-        <h4>Kendall's Fender Guitar Amp</h4>
+        <h2>Kendall's Fender Guitar Amp</h2>
         <div className="photos">
         <img className="responsive" src="https://cdn.mos.cms.futurecdn.net/fzZXdEcRuX6cr5CZexmuwn.jpg"/>
         <img className="responsive" src="https://www.nstuffmusic.com/images/product/large/ae00-57701.jpg"/>

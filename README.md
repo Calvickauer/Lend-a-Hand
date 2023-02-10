@@ -28,6 +28,7 @@ We use SemVer for versioning. For the versions available, see the tags on this r
 # Authors
 Calvin Moldenhauer - Full Stack Engineer - https://github.com/Calvickauer
 Jordan Lind - Full Stack Engineer - https://github.com/gititgrl
+Alexander Cairel - Full Stack Engineer - https://github.com/ajcairel
 See also the list of contributors who participated in this project.
 # License
 This project is licensed under the MIT License - see the LICENSE.md file for details.
@@ -38,4 +39,5 @@ etc
 
 nodejs.orgnodejs.org
 Node.js
+Node.js® is a JavaScript runtime built on Chrome's V8 JavaScript engine.
 Node.js® is a JavaScript runtime built on Chrome's V8 JavaScript engine.
