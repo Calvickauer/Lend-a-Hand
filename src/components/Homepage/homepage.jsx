@@ -42,7 +42,14 @@ const Homepage = () => {
       </div>
       <div>
         {filteredResults.map((eye, idx) => (
-          <div>{eye.title}</div>
+          <div>
+          <table>
+            <th>{eye.title}</th>
+            <tr><img src={`${eye.image}`} alt="" style={{ width: "25rem", height: "25rem"}}/> </tr>
+          </table>
+            <button as={Link} to={`/items/${eye._id}`}>Info</button>
+
+          </div>
         ))}
         
         
