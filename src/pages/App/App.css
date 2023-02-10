@@ -168,14 +168,37 @@
   margin-top: 50px;
 }
 
+.photos {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  flex-wrap:nowrap;
+}
+img{
+  
+  width: 50%;
+  height: auto;
+  padding:8px;
+  border:#a0a096;
+  border-style: ridge;
+}
+.description {
+  display: flex;
+  flex-direction: column;
+  border:#a0a096;
+  border-style: ridge;
+  padding: 20px;
+  margin: 20px;
 
+}
 /* React Calendar Styling */
 .calendar {
+  display: flex;
   align-items:center;
   justify-content: center;
 }
 .react-calendar {
-  
   width: 350px;
   max-width: 100%;
   background: white;
