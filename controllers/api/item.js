@@ -5,8 +5,8 @@ module.exports = {
 }
 
 async function addItem(req, res) {
-    req.body.users = req.user._id;
+    req.body.user = req.user._id;
     const newItem = new Item(req.body);
-    await newItem.save();
+    // await newItem.save();
     res.json(newItem);
 }

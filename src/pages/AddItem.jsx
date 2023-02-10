@@ -1,38 +1,27 @@
-import * as itemAPI from "../../utilities/item-api"
-import { useState } from "react";
+import * as itemAPI from "../utilities/item-api"
+import React, { useState } from "react";
 
-export default function addItemPage({user}) {
-
-   
-
+export default function AddItemPage({user}) {
     const [newItem, setNewItem] = useState({ text: ""});
 
-    function handleAddTodo(evt) {
+    async function handleAddItem(evt) {
       evt.preventDefault();
-      addTodo(newTodo);
-      setNewTodo({ text: "", completed: false });
+      await itemAPI.addItem(newItem);
+      setNewItem({ text: ""});
     }
   
     return (
       <>
-        s<h2>New To-Do</h2>
-        <form onSubmit={handleAddTodo}>
+        s<h2>New Item</h2>
+        <form onSubmit={handleAddItem}>
           <input
-            value={newTodo.text}
-            onChange={(e) => setNewTodo(e.target.value)}
-            placeholder="New To-Do"
+            value={newItem.text}
+            onChange={(e) => setNewItem(e.target.value)}
             required
-            pattern=".{4,}"
           />
-          <button type="submit">ADD TO-DO</button>
+          <button type="submit">Add Item</button>
         </form>
       </>
     );
-
-
-
-    
-
-  
   
 }

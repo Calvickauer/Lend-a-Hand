@@ -4,11 +4,10 @@ const homepage = () => {
   return (
     <div>
       <h1>HomePage</h1>
-      <h3>Homepage</h3>
       <div className='form__container'>
         <form>
-          <label className='search__label'>Search for tools!</label>
-          <input className='item__input' type='text' id='item-input' placeholder='Search items'></input>
+          <input className='item__input' type='text' id='item-input' placeholder='Search for items to borrow...'/>
+          <button className='search__btn' type="submit" placeholder='Search'/>
         </form>
 
       </div>
