@@ -13,6 +13,7 @@ export default function NavBar({ user, setUser }) {
   return (
     <nav className="navBar">
       <div className='nav__links'>
+        <span className='lending'>Lending Hand</span>
       <span className='welcome__nav' >Welcome, {user.name}</span>   
       &nbsp; | &nbsp;
       <Link className='link' to="/">Search</Link>
