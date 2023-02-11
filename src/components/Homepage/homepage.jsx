@@ -27,8 +27,10 @@ const Homepage = () => {
 
   return (
 <>
+
 <div>
-      <h3 className="homepage__title">Lend A Hand!</h3>
+    <div className="home__container">
+      <h3 className="homepage__title">Lending Hand!</h3>
       <div className="form__container">
         <form className="form">
           {/* <label className="search__label">Search for items to borrow!</label> */}
@@ -41,9 +43,9 @@ const Homepage = () => {
           />
         </form>
       </div>
-      <div>
+      <div className="all__items">
         {filteredResults.map((eye, idx) => (
-          <div>
+          <div className="item__photo">
           <table>
             <th>{eye.title}</th>
             <tr><img src={`${eye.image}`} alt="" style={{ width: "25rem", height: "25rem"}}/> </tr>

@@ -30,10 +30,12 @@ console.log(item)
             <h4>about....</h4>
           </div>
       </div>
+      <div className='your__items'>
       <h1>Items</h1>
             {item.map((item, idx) => 
             <div>{item.title} </div>
             )}
+      </div>
     </div>
   )
 }

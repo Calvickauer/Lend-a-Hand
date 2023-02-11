@@ -46,15 +46,22 @@
 }
 
 .homepage__title{
-  margin-top: 60px;
   font-size: 40px;
+  margin-top: 0px;
+  padding-top: 100px;
+}
+
+.home__container{
+  height: fit-content;
+  margin-top: 0px;
 }
 
 .form__container {
   align-items: center;
   border: 1px solid var(--black);
+  background-color: rgb(255, 255, 255);
   border-radius: 20px;
-  color: white;
+  color: rgb(0, 0, 0);
   padding: 5px;
   margin-left: auto;
   margin-right: auto;
@@ -63,12 +70,19 @@
   min-height: fit-content;
 }
 
+
 /* .form__container:hover{
   background: rgb(255,0,0);
   background: linear-gradient(90deg, rgba(255,0,0,1) 0%, rgba(255,0,0,1) 20%, rgba(0,0,0,1) 45%, rgba(0,0,0,1) 55%, rgba(255,0,0,1) 80%, rgba(255,0,0,1) 100%);
   font-weight: bolder;
   text-decoration: underline;
 } */
+
+.form__container:hover{
+  background: rgb(255, 255, 255);
+  font-weight: bolder;
+}
+
 
 .form{
  
@@ -86,11 +100,16 @@
   width: 200px;
   margin-left: 30px;
   margin-top: 5px;
-  color: white;
+  color: rgb(0, 0, 0);
+}
+
+.search__label:hover{
+  text-decoration: underline;
 }
 
 .navBar {
   background-color: lightgray;
+  position: fixed;
   margin: 0px;
   height: 60px;
   color: var(--black);
@@ -330,4 +349,36 @@ img{
 }
 .react-calendar--selectRange .react-calendar__tile--hover {
   background-color: #e6e6e6;
+}
+
+.item__photo{
+  margin-top: 30px;
+  margin-left: auto;
+  margin-right: auto;
+  width: fit-content;
+  padding: 10px;
+  /* background-color: rgb(195, 195, 195); */
+}
+
+.new__items{
+  width: 300px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 50px;
+}
+
+.your__items{
+  height: 200px;
+  width: 200px;
+  overflow-y: scroll;
+  border: 2px solid black;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 10px;
+}
+
+.all__items{
+  display: grid;
+  grid-template-columns: .5fr .5fr;
+  margin-top: 25px;
 }
